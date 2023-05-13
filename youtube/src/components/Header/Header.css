@@ -1,0 +1,456 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    /* position: relative; */
+    /* overflow-x: hidden; */
+}
+body {
+    overflow-x: hidden;
+}
+header {
+    position: relative;
+    height: 130vh;
+}
+.logotip {
+    width: 37px;
+    height: 25px;
+    /* background-color: red; */
+    color: red;
+}
+nav {
+    padding: 10px 0;
+}
+.navBar_nav_logo {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.NavBar__nav__logo__span {
+    font-size: large;
+    font-weight: 900;
+}
+.NavBar__nav__div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBar_nav_logo {
+    margin:0 20px ;
+}
+.hamburger {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    transition: 1s;
+}
+.hamburger:hover {
+    color: red;
+}
+.NavBar__nav__div__form__inp{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search{
+    /* position: relative; */
+    padding: 0 10px;
+    /* max-width: 840px; */
+    width: 840px;
+    border-radius: 20px;
+    height: 30px;
+    outline: none;
+    border: 2px solid #EBEBEB;
+    background-color: transparent;
+}
+.inpSerchImg {
+    position: absolute;
+    right: 10px;
+}
+.vidio{
+    width: 30px;
+    height: 30px;
+    color: #171616ed;
+}
+.dots{
+    width: 30px;
+    height: 30px;
+    color: #171616ed;
+}
+.notification {
+    width: 30px;
+    height: 30px;
+    color: #171616ed;
+
+}
+.person {
+    width: 30px;
+    height: 30px;
+    color: #171616ed;
+}
+.NavBar_nav__companents {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.sidebar {
+    width: 255px;
+    /* border-right: 2px solid #171616ed; */
+    padding: 0 0 0 20px;
+}
+.home {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.Games__img,
+.Music__img,
+.Like__img,
+.Favourites__img,
+.Watch__img,
+.History__img,
+.Library__img,
+.Subscriptions__img,
+.Trending__img,
+.home__img {
+    width: 30px;
+    height: 30px;
+    color: #171616ed;
+}
+.Games__img:hover,
+.Games__link:hover,
+.Music__img:hover,
+.Music__link:hover,
+.Like__img:hover,
+.Like__link:hover,
+.Favourites__img:hover,
+.Favourites__link:hover,
+.Watch__img:hover,
+.Watch__link:hover,
+.History__img:hover,
+.History__link:hover,
+.Library__img:hover,
+.Library__link:hover,
+.Subscriptions__link:hover,
+.Trending__img:hover,
+.Trending__link:hover,
+.home__link:hover,
+.home__img:hover {
+    color: red;
+}
+.Games__link,
+.Music__link,
+.Like__link,
+.Favourites__link,
+.Watch__link,
+.History__link,
+.Library__link,
+.Subscriptions__link,
+.Trending__link,
+.home__link {
+    color: #171616ed;
+    text-decoration: none;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
+.Library__link {
+    margin-top: 50px;
+}
+.darkMode {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
+.sidebar__bottom {
+    display: none;
+    /* align-items: center; */
+}
+
+/* dark mode */
+.white {
+background-color: white;
+color: black;
+transition: 1s;
+}
+.dark .sidebar__bottom,
+.dark{
+background-color: black;
+color: white;
+transition: 1s;
+}
+.dark .person,
+.dark .vidio,
+.dark .dots,
+.dark .notification{
+    color: #fff;
+    /* background-color: white; */
+}
+.dark .sidebar__bottom,
+.dark .hamburger,
+.dark .home__img,
+.dark .home__link,
+.dark .Trending__img,
+.dark .Trending__link,
+.dark .Subscriptions__img,
+.dark .Subscriptions__link,
+.dark .Library__img,
+.dark .Library__link,
+.dark .History__img,
+.dark .History__link,
+.dark .Watch__img,
+.dark .Watch__link,
+.dark .Favourites__img,
+.dark .Favourites__link,
+.dark .Like__img,
+.dark .Like__link,
+.dark .Music__img,
+.dark .Music__link,
+.dark .Games__img,
+.dark .Games__link,
+.dark .inpSerchImg,
+.dark .change-btn{
+    /* background-color: black; */
+    color: #fff;
+    
+}
+.dark .search {
+    color: #fff;
+}
+
+/* .change_btn{
+    margin-left: 450px;
+
+}
+.app-js .change_btn{
+    margin-left: 650px;
+    background-color: black;
+    color: #fff;
+    
+} */
+/* .app-js .change__btn{
+   border: none;
+    background-color: black;
+    color: #fff;
+    
+} */
+.change-btn {
+    background-color: transparent;
+    border: none;
+}
+.displayBlok {
+    /* color: #fff; */
+    display: block;
+}
+.dislayNone {
+    display: none;
+}
+/* .moon {
+    display: none;
+} */
+
+.hero {
+    display: flex;
+}
+.sidebar__bottom {
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+@media screen and (max-width:1200px){
+    .search{
+        width: 500px;
+    }
+}
+@media screen and (max-width:1000px){
+    .search{
+        width: 500px;
+    }
+    .vidio{
+        width: 20px;
+        height: 20px;
+    }
+    .dots{
+        width: 20px;
+        height: 20px;
+        
+    }
+    .notification {
+        width: 20px;
+        height: 20px;
+        
+    
+    }
+    .person {
+        width: 20px;
+        height: 20px;
+        
+    }
+}
+@media screen and (max-width:940px){
+    .search{
+        width: 200px;
+    }
+    .vidio{
+        width: 20px;
+        height: 20px;
+        
+    }
+    .dots{
+        width: 20px;
+        height: 20px;
+        
+    }
+    .notification {
+        width: 20px;
+        height: 20px;
+        
+    
+    }
+    .person {
+        margin-right: 20px;
+        width: 20px;
+        height: 20px;
+        
+    }
+}
+@media screen and (max-width:740px){
+    .NavBar__nav__logo__span {
+        display: none;
+    }
+    .search{
+        width: 420px;
+    }
+    .vidio,
+    .dots,
+    .notification{
+        display: none;
+    }
+    .person {
+        width: 30px;
+        height: 30px;
+        
+    }
+    .hamburger {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .sidebar__bottom {
+        display: flex;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        align-items: center;
+        display: block;
+    }
+    .sidebar__bottom__1 {
+        display: flex;
+        align-items: center;
+        column-gap: 0px;
+        /* width: 100%; */
+        padding: 0 15px;
+        overflow-y: hidden;
+        
+    }
+    .home,
+    .Library__link {
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width:562px){
+    header {
+        height: 1400vh;
+    }
+    .search{
+        width: 300px;
+    }
+    .vidio,
+    .dots,
+    .notification{
+        display: none;
+    }
+    .person {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        
+    }
+    .hamburger {
+        display: none;
+    }
+    .sidebar__bottom {
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+        align-items: center;
+        display: block;
+    }
+    .sidebar__bottom__1 {
+        display: flex;
+        align-items: center;
+        column-gap: 0px;
+        /* width: 100%; */
+        padding: 0 15px;
+        overflow-y: hidden;
+        
+    }
+    .home,
+    .Library__link {
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width:440px){
+    .search {
+        width: 250px;
+    }
+}
+@media screen and (max-width:400px){
+    .search {
+        width: 220px;
+    }
+}
+@media screen and (max-width:363px){
+    .search{
+        width: 140px;
+    }
+    .vidio,
+    .dots,
+    .notification{
+        display: none;
+    }
+    .person {
+        width: 30px;
+        height: 30px;
+        
+    }
+    .hamburger {
+        display: none;
+    }
+    .sidebar__bottom {
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+        align-items: center;
+        display: block;
+    }
+    .sidebar__bottom__1 {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        padding: 0 15px;
+        overflow-y: hidden;
+        
+    }
+    .home,
+    .Library__link {
+        margin-top: 0px;
+    }
+}
